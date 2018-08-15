@@ -1,0 +1,1 @@
+$HOME/bin/roll 10 "$1"

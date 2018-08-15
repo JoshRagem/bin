@@ -1,0 +1,2 @@
+echo "$(od -vAn -N1 -tu2 < /dev/urandom)""%${1}+1${2}" | bc
+
