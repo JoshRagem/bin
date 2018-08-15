@@ -1,0 +1,6 @@
+#!/bin/bash
+
+files=(/home/joshua/share/homefiles/wallpaper/*.png)
+sort -R <(echo "${files[@]}"|tr ' ' '\n')| tail -1 |while read img; do
+	i3lock -i $img -t
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TARGET=${1:-sandbox}
+sudo openvpn --auth-user-pass --auth-nocache --config ~/.ssh/$TARGET.ovpn --up /etc/openvpn/update-resolv-conf --script-security 2 --dhcp-option PROXY_AUTO_CONFIG_URL https://s3.amazonaws.com/files.localytics/snowflake-proxy.pac
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+did_file=${DID_FILE:-~/.did}
+echo -e "$(date -u)" "\t" "$@" >> $did_file

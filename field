@@ -1,0 +1,19 @@
+#!/bin/bash
+
+FNUM=$1
+FS=$2
+
+re='^[0-9]+$'
+if ! [[ $FNUM =~ $re ]]
+then
+  echo "usage: field int [separator]" >&2
+  exit 1
+fi
+
+if [ -n "$FS" ]
+then
+  FSARG='BEGIN { FS="'$FS'" }'
+fi
+
+awk "$FSARG"'{print $'$1'}'
+

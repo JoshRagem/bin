@@ -1,0 +1,5 @@
+#!/bin/bash
+
+did_file=${DID_FILE:-~/.did}
+cat $did_file
+

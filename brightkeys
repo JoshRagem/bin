@@ -1,0 +1,2 @@
+sudo tee /sys/class/leds/smc\:\:kbd_backlight/brightness > /dev/null <<< $1
+
