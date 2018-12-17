@@ -1,0 +1,1 @@
+byobu new-window -n "$(basename $1)" vim $1

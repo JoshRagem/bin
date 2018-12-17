@@ -1,8 +1,6 @@
 #!/bin/bash
 xset r rate 200 30
-xinput set-prop 12 285 -114 -114
+xinput set-prop 12 292 1
+xinput set-prop 12 299 0.5
 xsetroot -cursor_name xterm
-xinput set-prop "Kensington      Kensington USB/PS2 Orbit" "libinput Button Scrolling Button" 3
-xinput set-prop "Kensington      Kensington USB/PS2 Orbit" "libinput Scroll Method Enabled" 0, 0, 1  # This is button
-xinput set-prop "Kensington      Kensington USB/PS2 Orbit" "libinput Natural Scrolling Enabled" 1
 
